@@ -26,6 +26,9 @@ body {
     padding: 0;
     height: 69px;
     border-bottom: 1px solid #fff;
+    position: fixed;
+    z-index: 1;
+    background: #000;
 }
 
 header img {
