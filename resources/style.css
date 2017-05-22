@@ -42,6 +42,7 @@ header nav ul li {
     font-weight: 600;
     text-decoration: none;
     position: relative;
+    color: rgba(255,255,255,0.7);
 }
 
 header nav ul {
@@ -66,11 +67,11 @@ header nav ul {
 .hover-nav:hover:after { 
     transform: scaleX(1);
     transform-origin:0% 100%;
-    border-color: orange;
+    border-color: bisque;
 }
 
 header nav ul li a:hover {
-    color: ghostwhite;
+    color: bisque;
 }
 
 /* CENTER HEADER */
@@ -96,12 +97,146 @@ header nav ul li a:hover {
     
 }
 
+/* TEA PICTURES PART */
 
-
-.products img {
-    height: 200px;
-    width: 300px;
+.tea-month {
+    width: 1000px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    margin: 0 auto;
 }
+
+.tea-month header {
+    padding: 0;
+    font-family: cobblestone;
+}
+
+.products {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 300px;
+    height: 300px;
+    
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin: 0;
+}
+
+.product p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* INFORMATION/LOCATION PART */
+
+.information {
+    height: 500px;
+    opacity: 1;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(pictures/location-background.jpg) no-repeat center;
+    border-radius: 10px;
+}
+
+.locations {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.location {
+    padding: 10px;
+    border: 1px solid white;
+    background: #000;
+    opacity: 1;
+    color: #fff;
+    flex-basis: 300px;
+    margin: 0 20px;
+}
+
+.location h2 {
+    font-weight: 800; 
+}
+
+.contact {
+    height: 200px;
+}
+
+.contact h2 a{
+    font-weight: 700;
+    font-family: cobblestone;
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out .3s;
+}
+
+.contact h2 a:hover {
+    padding: 0 3px;
+    color: bisque;
+    border-color: bisque;
+    
+}
+
+.contact h5 a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact h5 a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: relative;
+    border-top: 3px solid white;
+    opacity: 1;
+    background: #ccc;
+    bottom: 0;
+    text-align: left;
+    height: 40px;
+}
+
+footer h4 {
+    font-style: italic;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin: 10px 0 15px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
