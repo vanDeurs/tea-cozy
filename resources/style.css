@@ -77,6 +77,23 @@ header nav ul li a:hover {
     color: bisque;
 }
 
+#menu {
+    display: none;
+    position: absolute;
+}
+
+
+@media only screen and (max-width: 642px) {
+    #menu {
+        display: inline;
+        position: relative;
+    }
+    
+    .options {
+        display: none;
+        position: relative;
+    }
+}
 /* CENTER HEADER */
 
 .center {
@@ -85,7 +102,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 1200px;
+    max-width: 1200px;
     background: url("pictures/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,19 +120,17 @@ header nav ul li a:hover {
 /* TEA PICTURES PART */
 
 .tea-month {
-    width: 1000px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .tea-month header {
     padding: 0;
-    font-family: cobblestone;
+    font-family: cobblestone, serif;
 }
 
 .products {
-    width: 1000px;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -124,6 +139,7 @@ header nav ul li a:hover {
 .product {
     width: 300px;
     height: 300px;
+    padding: 15px;
     
 }
 
@@ -144,9 +160,9 @@ header nav ul li a:hover {
 /* INFORMATION/LOCATION PART */
 
 .information {
-    height: 500px;
+    min-height: 500px;
     opacity: 1;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     background: url(pictures/location-background.jpg) no-repeat center;
@@ -180,9 +196,7 @@ header nav ul li a:hover {
 
 .contact h2 a{
     font-weight: 700;
-    font-family: cobblestone;
-    border-right: 3px solid #fff;
-    border-left: 3px solid #fff;
+    font-family: cobblestone, serif;
     padding: 0 20px;
     display: inline-block;
     font-size: 3rem;
@@ -191,9 +205,12 @@ header nav ul li a:hover {
     color: #fff;
     text-decoration: none;
     transition: ease-in-out .3s;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
 }
 
 .contact h2 a:hover {
+    border-color: beige;
     padding: 0 3px;
     color: bisque;
     border-color: bisque;
@@ -212,12 +229,11 @@ header nav ul li a:hover {
 
 footer {
     position: relative;
-    border-top: 3px solid white;
     opacity: 1;
     background: #ccc;
     bottom: 0;
     text-align: left;
-    height: 40px;
+    min-height: 40px;
 }
 
 footer h4 {
@@ -225,7 +241,6 @@ footer h4 {
     color: #000;
     font-size: 20px;
     letter-spacing: 0.5px;
-    margin: 10px 0 15px 10px;
 }
 
 
